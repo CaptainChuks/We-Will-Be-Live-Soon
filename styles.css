@@ -1,0 +1,145 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #06003A;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .logo {
+    margin-top: -50px;
+    width: 100%; /* Make the logo responsive by setting its width to 100% */
+    max-width: 700px;
+    height: auto;
+    margin-bottom: 1px;
+    opacity: 0;
+    transform: translateY(-50px);
+    animation: slideInFromTop 1s ease-in-out forwards;
+  }
+  
+  h2 {
+    margin-top: -10px;
+    font-size: 36px; /* Adjust font size for smaller screens */
+    margin-bottom: 10px;
+  }
+  
+  #countdown {
+    font-size: 48px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: fadeInFromLeft 1s ease-in-out forwards;
+  }
+  
+  .unit-label {
+    font-size: 14px;
+  }
+  
+  .countdown-unit {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  #countdown span {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #countdown p {
+    margin: 0;
+  }
+  
+  #social-icons,
+  #email-icon {
+    margin-top: 20px;
+    opacity: 0;
+    transform: translateY(50px);
+    animation: slideInFromBottom 1s ease-in-out forwards;
+  }
+  
+  #social-icons a,
+  #email-icon a {
+    margin: 0 10px;
+  }
+  
+  #email-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #email-icon a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  #email-icon img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  #email-icon p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  @keyframes fadeInFromLeft {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInFromTop {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideInFromBottom {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 600px) {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 5px;
+    }
+  
+    #countdown {
+      font-size: 36px;
+    }
+  
+    .unit-label {
+      font-size: 12px;
+    }
+  
+    #email-icon img {
+      width: 20px;
+      height: auto;
+      margin-right: 5px;
+    }
+  
+    #email-icon p {
+      font-size: 12px;
+    }
+  }
+  
